@@ -4294,6 +4294,56 @@ img.u-pull-left {
     margin : 0;
 }
 
+/* n8n form CTA */
+.contact-form-cta {
+    margin-top  : var(--vspace-2_5);
+    text-align  : center;
+}
+
+.n8n-form-btn {
+    display          : inline-flex;
+    align-items      : center;
+    justify-content  : center;
+    gap              : 0.75rem;
+    min-width        : 280px;
+    margin           : 0;
+    transition       : all 0.3s ease-in-out;
+    position         : relative;
+}
+
+.n8n-form-btn svg {
+    width      : 20px;
+    height     : 20px;
+    flex-shrink : 0;
+    transition : transform 0.3s ease;
+}
+
+.n8n-form-btn:hover svg {
+    transform : scale(1.15);
+}
+
+.n8n-form-btn:hover {
+    transform  : translateY(-2px);
+    box-shadow : 0 8px 24px rgba(234, 190, 124, 0.35);
+}
+
+.n8n-form-btn:focus {
+    outline        : 3px solid var(--color-1);
+    outline-offset : 3px;
+}
+
+.n8n-form-btn:focus:not(:focus-visible) {
+    outline : none;
+}
+
+.n8n-form-note {
+    font-size   : var(--text-xs);
+    color       : var(--color-text-light);
+    margin-top  : var(--vspace-0_75);
+    font-style  : italic;
+    opacity     : 0.7;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * contact
