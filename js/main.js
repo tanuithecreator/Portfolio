@@ -279,6 +279,37 @@
     };  // end ssLightbox
 
 
+   /* Portfolio filter
+    * ------------------------------------------------------ */
+    const ssFolioFilter = function() {
+
+        const filterWrap = document.querySelector('.folio-filter');
+        if (!filterWrap) return;
+
+        const buttons = filterWrap.querySelectorAll('.folio-filter__btn');
+        const items = document.querySelectorAll('.folio-list__item');
+
+        filterWrap.addEventListener('click', function(event) {
+            const btn = event.target.closest('.folio-filter__btn');
+            if (!btn) return;
+
+            const filter = btn.getAttribute('data-filter');
+
+            buttons.forEach(function(b) {
+                b.classList.remove('is-active');
+            });
+            btn.classList.add('is-active');
+
+            items.forEach(function(item) {
+                const category = item.getAttribute('data-category');
+                const show = (filter === 'all') || (category === filter);
+                item.classList.toggle('is-hidden', !show);
+            });
+        });
+
+    };  // end ssFolioFilter
+
+
    /* Alert boxes
     * ------------------------------------------------------ */
     const ssAlertBoxes = function() {
@@ -381,6 +412,7 @@
         ssViewAnimate();
         ssSwiper();
         ssLightbox();
+        ssFolioFilter();
         ssAlertBoxes();
         ssMoveTo();
         ssCvDownload();

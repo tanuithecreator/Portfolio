@@ -14,7 +14,7 @@
 
 
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -151,7 +151,7 @@
                             <p class="attention-getter" data-animate-el>
                                 I'm a Fullstack Developer and AI Engineer with a BSc in Informatics and
                                 Computer Science from Strathmore University. I build software products
-                                that solve real-world problems — from platforms that assess financial risk
+                                that solve real-world problems, from platforms that assess financial risk
                                 in carbon credit markets, to intelligent systems that automatically
                                 transcribe and analyze meetings, to tools that detect manipulated images
                                 using deep learning. Currently working in the climate technology space
@@ -199,19 +199,25 @@
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
                                     <h4 class="timeline__title">Verst Carbon</h4>
-                                    <h5 class="timeline__meta">Software Engineering Intern</h5>
+                                    <h5 class="timeline__meta">SWE/AI Engineering Intern</h5>
                                     <p class="timeline__timeframe">Feb 2026 - Present</p>
                                 </div>
                                 <div class="timeline__desc">
                                     <p>
-                                        • Built full-stack production applications from scratch for
-                                        carbon project management and data analysis.<br>
-                                        • Collected and processed geospatial data for the company's
-                                        corridor intelligence platform.<br>
-                                        • Automated internal workflows including daily climate tech
-                                        news feeds and weekly performance analysis reports.<br>
-                                        • Contributed to data analysis pipelines supporting
-                                        carbon credit verification and monitoring.
+                                        • Designed and built multi-agent AI systems (LangGraph,
+                                        LangChain) that automate multi-step analysis across geospatial,
+                                        infrastructure, economic, and monitoring data, routing each task
+                                        to the most suitable language model for accuracy and cost.<br>
+                                        • Applied retrieval-augmented generation to ground AI responses
+                                        in trusted sources, keeping outputs accurate and traceable.<br>
+                                        • Built full-stack web applications with Next.js, React, and
+                                        Python (FastAPI, Node.js), including authenticated dashboards,
+                                        interactive maps, and real-time chat.<br>
+                                        • Developed data pipelines that ingest and validate large
+                                        geospatial and economic datasets, with automated quality and
+                                        freshness checks.<br>
+                                        • Containerized and deployed services with Docker and CI/CD,
+                                        adding monitoring and evaluation to track reliability.
                                     </p>
                                 </div>
                             </div>
@@ -275,8 +281,8 @@
                                 </div>
                                 <div class="timeline__desc">
                                     <p>
-                                        Completed — Degree conferment: August 2026.<br>
-                                        Dean's List (2022-2023, 2024-2025).<br>
+                                        Completed. Degree conferment: August 2026.<br>
+                                        Dean's List (2024-2025, 2025-2026).<br>
                                         • Local Committee Vice President for Finance
                                         and Legalities.<br>
                                         • Project Manager for SDG Hub in Strathmore.
@@ -329,7 +335,7 @@
                                 </div>
                                 <div class="timeline__desc">
                                     <p>
-                                        Currently participating in the 2026 cohort, developing sustainable energy solutions.
+                                        Completed the 2026 cohort, developing sustainable energy solutions.
                                     </p>
                                 </div>
                             </div>
@@ -386,29 +392,16 @@
                             Here are some of my favourite projects. Feel free to check them out.
                         </p>
 
+                        <div class="folio-filter" data-animate-el>
+                            <button class="folio-filter__btn is-active" type="button" data-filter="all">All</button>
+                            <button class="folio-filter__btn" type="button" data-filter="ai-ml">AI &amp; Machine Learning</button>
+                            <button class="folio-filter__btn" type="button" data-filter="climate-fintech">Climate &amp; Fintech</button>
+                            <button class="folio-filter__btn" type="button" data-filter="portfolios">Portfolios</button>
+                        </div>
+
                         <ul class="folio-list row block-lg-one-half block-stack-on-1000">
 
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-offtake">
-                                    <div class="folio-list__item-pic">
-                                        <img src="assets/images/portfolio/offtakeos.png"
-                                            srcset="assets/images/portfolio/offtakeos.png 1x"
-                                            alt="OfftakeOS">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Fintech + AI Automation
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            OfftakeOS.
-                                        </div>
-                                    </div>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-
-                            <li class="folio-list__item column" data-animate-el>
+                            <li class="folio-list__item column" data-animate-el data-category="ai-ml">
                                 <a class="folio-list__item-link" href="#modal-meeting">
                                     <div class="folio-list__item-pic">
                                         <img src="assets/images/portfolio/meeting-intel.png"
@@ -427,7 +420,7 @@
                                 </a>
                             </li> <!--end folio-list__item -->
 
-                            <li class="folio-list__item column" data-animate-el>
+                            <li class="folio-list__item column" data-animate-el data-category="ai-ml">
                                 <a class="folio-list__item-link" href="#modal-01">
                                     <div class="folio-list__item-pic">
                                         <img src="assets/images/portfolio/deepdetect.png"
@@ -445,26 +438,7 @@
                                 </a>
                             </li> <!--end folio-list__item -->
 
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-carbon">
-                                    <div class="folio-list__item-pic">
-                                        <img src="assets/images/portfolio/carbonverify.png"
-                                            srcset="assets/images/portfolio/carbonverify.png 1x"
-                                            alt="CarbonVerify">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Fullstack + DevOps
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            CarbonVerify.
-                                        </div>
-                                    </div>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
+                            <li class="folio-list__item column" data-animate-el data-category="ai-ml">
                                 <a class="folio-list__item-link" href="#modal-rainmaker">
                                     <div class="folio-list__item-pic">
                                         <img src="assets/images/portfolio/rainmaker.png"
@@ -482,26 +456,7 @@
                                 </a>
                             </li> <!--end folio-list__item -->
 
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-03">
-                                    <div class="folio-list__item-pic">
-                                        <img src="assets/images/portfolio/smartfarm.png"
-                                            srcset="assets/images/portfolio/smartfarm.png 1x"
-                                            alt="SmartFarm">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            IoT + AI Chatbot
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            SmartFarm.
-                                        </div>
-                                    </div>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
+                            <li class="folio-list__item column" data-animate-el data-category="ai-ml">
                                 <a class="folio-list__item-link" href="#modal-07">
                                     <div class="folio-list__item-pic">
                                         <img src="assets/images/portfolio/rag-gaming-ai.png"
@@ -520,6 +475,120 @@
                                 </a>
                             </li> <!--end folio-list__item -->
 
+                            <li class="folio-list__item column" data-animate-el data-category="climate-fintech">
+                                <a class="folio-list__item-link" href="#modal-offtake">
+                                    <div class="folio-list__item-pic">
+                                        <img src="assets/images/portfolio/offtakeos.png"
+                                            srcset="assets/images/portfolio/offtakeos.png 1x"
+                                            alt="OfftakeOS">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Fintech + AI Automation
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            OfftakeOS.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el data-category="climate-fintech">
+                                <a class="folio-list__item-link" href="#modal-carbon">
+                                    <div class="folio-list__item-pic">
+                                        <img src="assets/images/portfolio/carbonverify.png"
+                                            srcset="assets/images/portfolio/carbonverify.png 1x"
+                                            alt="CarbonVerify">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Fullstack + DevOps
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            CarbonVerify.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el data-category="climate-fintech">
+                                <a class="folio-list__item-link" href="#modal-03">
+                                    <div class="folio-list__item-pic">
+                                        <img src="assets/images/portfolio/smartfarm.png"
+                                            srcset="assets/images/portfolio/smartfarm.png 1x"
+                                            alt="SmartFarm">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            IoT + AI Chatbot
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            SmartFarm.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el data-category="portfolios">
+                                <a class="folio-list__item-link" href="#modal-brian">
+                                    <div class="folio-list__item-pic">
+                                        <img src="assets/images/portfolio/brian-portfolio.png"
+                                            srcset="assets/images/portfolio/brian-portfolio.png 1x"
+                                            alt="Brian Tanui portfolio website">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Portfolio Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Brian Tanui.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el data-category="portfolios">
+                                <a class="folio-list__item-link" href="#modal-jack">
+                                    <div class="folio-list__item-pic">
+                                        <img src="assets/images/portfolio/jack-portfolio.png"
+                                            srcset="assets/images/portfolio/jack-portfolio.png 1x"
+                                            alt="Jack Ambai portfolio website">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Portfolio Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Jack Ambai.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el data-category="portfolios">
+                                <a class="folio-list__item-link" href="#modal-lonnie">
+                                    <div class="folio-list__item-pic">
+                                        <img src="assets/images/portfolio/lonnie-portfolio.png"
+                                            srcset="assets/images/portfolio/lonnie-portfolio.png 1x"
+                                            alt="Lonnie Joshua portfolio website">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Portfolio Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Lonnie Joshua.
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
                         </ul> <!-- end folio-list -->
 
                     </div> <!-- end column -->
@@ -533,12 +602,12 @@
                             <div class="modal-popup__desc">
                                 <h5>OfftakeOS</h5>
                                 <p>An automated financial risk engine for carbon credit portfolios. OfftakeOS ingests
-                                    forward contract data, monitors 10 real-world data sources (NASA FIRMS, GFW
-                                    Deforestation, GDELT News, carbon prices, and more), scores each contract's
-                                    expected delivery using additive risk discounting with time-decay and country risk
-                                    multipliers, and visualizes portfolio-wide financial exposure on interactive maps
-                                    and dashboards. Features what-if scenario simulation, Telegram alerts, CSV import,
-                                    and 322 automated tests across backend and automation layers.</p>
+                                    forward contract data, monitors real-world environmental and market data sources,
+                                    scores each contract's expected delivery using risk discounting with time-decay and
+                                    country risk multipliers, and visualizes portfolio-wide financial exposure on
+                                    interactive maps and dashboards. Features what-if scenario simulation, alerts, CSV
+                                    import, and a comprehensive automated test suite across the backend and automation
+                                    layers.</p>
                                 <ul class="modal-popup__cat">
                                     <li>Next.js</li>
                                     <li>Flask</li>
@@ -632,7 +701,7 @@
                             <div class="modal-popup__desc">
                                 <h5>DeepDetect</h5>
                                 <p>An explainable deep-learning system for detecting forged images and videos. Built
-                                    with a ResNet50 CNN trained on 140K images achieving 94.12% accuracy (0.982 AUC).
+                                    with a ResNet50 model trained on a large public dataset with strong accuracy.
                                     Features GRAD-CAM explainability visualizations, video frame aggregation pipeline,
                                     Google OAuth + JWT authentication, admin analytics dashboards, detection history,
                                     and PDF report generation. Full-stack with React/TypeScript frontend and Flask
@@ -805,6 +874,137 @@
                                         View Repo
                                     </a>
                                     <a href="https://gamingragassistant-xlr8.streamlit.app/" target="_blank"
+                                        rel="noopener noreferrer" class="modal-popup__link modal-popup__link--live"
+                                        onclick="event.stopPropagation();">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z" />
+                                            <path
+                                                d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z" />
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end modal -->
+
+
+                    <!-- Brian Tanui Portfolio Modal -->
+                    <div id="modal-brian" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__desc">
+                                <h5>Brian Tanui &mdash; Portfolio</h5>
+                                <p>A bespoke personal portfolio for a finance and investments consultant. Features a
+                                    dark, elegant design, bilingual English and German content, animated section
+                                    reveals, and a clear narrative of experience, education, and skills. Built as a
+                                    fast, fully responsive single-page site.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                                <div class="modal-popup__links">
+                                    <a href="https://github.com/tanuithecreator/Brian-Tanui-Portfolio" target="_blank"
+                                        rel="noopener noreferrer" class="modal-popup__link modal-popup__link--repo"
+                                        onclick="event.stopPropagation();">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                        View Repo
+                                    </a>
+                                    <a href="https://tanuithecreator.github.io/Brian-Tanui-Portfolio/" target="_blank"
+                                        rel="noopener noreferrer" class="modal-popup__link modal-popup__link--live"
+                                        onclick="event.stopPropagation();">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z" />
+                                            <path
+                                                d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z" />
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end modal -->
+
+
+                    <!-- Jack Ambai Portfolio Modal -->
+                    <div id="modal-jack" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__desc">
+                                <h5>Jack Ambai &mdash; Portfolio</h5>
+                                <p>A refined personal portfolio for a customer experience and operations professional.
+                                    Features bold editorial typography, a live Nairobi clock, smooth reveal-on-scroll
+                                    animations, a custom cursor, and copy-to-clipboard contact details. Fully responsive
+                                    across devices.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                                <div class="modal-popup__links">
+                                    <a href="https://github.com/tanuithecreator/Jack-Ambai-Portfolio" target="_blank"
+                                        rel="noopener noreferrer" class="modal-popup__link modal-popup__link--repo"
+                                        onclick="event.stopPropagation();">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                        View Repo
+                                    </a>
+                                    <a href="https://tanuithecreator.github.io/Jack-Ambai-Portfolio/" target="_blank"
+                                        rel="noopener noreferrer" class="modal-popup__link modal-popup__link--live"
+                                        onclick="event.stopPropagation();">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z" />
+                                            <path
+                                                d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z" />
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end modal -->
+
+
+                    <!-- Lonnie Joshua Portfolio Modal -->
+                    <div id="modal-lonnie" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__desc">
+                                <h5>Lonnie Joshua &mdash; Portfolio</h5>
+                                <p>A polished personal portfolio for an investment analyst. Features a dark theme, an
+                                    animated flowing background, and a clear presentation of experience and capabilities
+                                    across real assets, listed markets, and sustainable finance. Fully responsive.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                                <div class="modal-popup__links">
+                                    <a href="https://github.com/tanuithecreator/Lonnie-Joshua-Portfolio" target="_blank"
+                                        rel="noopener noreferrer" class="modal-popup__link modal-popup__link--repo"
+                                        onclick="event.stopPropagation();">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                        View Repo
+                                    </a>
+                                    <a href="https://tanuithecreator.github.io/Lonnie-Joshua-Portfolio/" target="_blank"
                                         rel="noopener noreferrer" class="modal-popup__link modal-popup__link--live"
                                         onclick="event.stopPropagation();">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"

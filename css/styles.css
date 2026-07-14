@@ -3636,6 +3636,76 @@ img.u-pull-left {
     margin-left       : 0;
 }
 
+.folio-filter {
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 1rem 2.4rem;
+    margin-top     : var(--vspace-1_5);
+    margin-bottom  : var(--vspace-0_5);
+    padding        : 0;
+}
+
+.folio-filter__btn {
+    font-family      : var(--font-1);
+    font-size        : var(--text-sm);
+    font-weight      : 400;
+    text-transform   : uppercase;
+    letter-spacing   : .2em;
+    color            : rgba(255, 255, 255, 0.5);
+    background-color : transparent;
+    background       : none;
+    border           : 0;
+    height           : auto;
+    line-height      : 1.4;
+    margin           : 0;
+    padding          : .4rem 0;
+    cursor           : pointer;
+    position         : relative;
+    transition       : color .3s ease;
+}
+
+.folio-filter__btn::after {
+    content          : "";
+    position         : absolute;
+    left             : 0;
+    bottom           : 0;
+    width            : 100%;
+    height           : 1px;
+    background-color : var(--color-1);
+    transform        : scaleX(0);
+    transform-origin : left center;
+    transition       : transform .3s ease;
+}
+
+.folio-filter__btn:hover,
+.folio-filter__btn:focus,
+.folio-filter__btn:active {
+    background-color : transparent;
+    border-color     : transparent;
+    outline          : 0;
+}
+
+.folio-filter__btn:hover,
+.folio-filter__btn:focus-visible {
+    color : var(--color-white);
+}
+
+.folio-filter__btn.is-active {
+    color : var(--color-1);
+}
+
+.folio-filter__btn.is-active::after {
+    transform : scaleX(1);
+}
+
+.folio-list__item {
+    transition : opacity .4s ease, transform .4s ease;
+}
+
+.folio-list__item.is-hidden {
+    display : none;
+}
+
 .folio-list__item {
     margin-bottom : var(--vspace-1);
     position      : relative;
