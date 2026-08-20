@@ -106,7 +106,8 @@ def build():
     add_section_heading(doc, "PROFESSIONAL SUMMARY")
     add_body(
         doc,
-        "Software and AI Engineer with a BSc in Informatics and Computer Science, "
+        "Software and AI Engineer holding a BSc in Informatics and Computer Science "
+        "(Second Class Honours, Upper Division) from Strathmore University, "
         "currently building production software for the climate technology sector "
         "at Verst Carbon. My work spans full-stack web applications, AI agent "
         "systems, and data pipelines, from a financial risk engine for carbon-credit "
@@ -141,7 +142,7 @@ def build():
     )
     add_body(
         doc,
-        "Coursework completed, December 2025 | Degree conferment: August 2026",
+        "Graduated August 2026 | Second Class Honours, Upper Division",
         italic=True,
         space_after=Pt(2),
     )

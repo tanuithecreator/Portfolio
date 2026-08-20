@@ -3,7 +3,22 @@
     "allow": [
       "Bash(npx serve:*)",
       "Bash(timeout:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(python -c \"import docx; print\\('docx ok'\\)\")",
+      "Bash(python build_cv.py)",
+      "Read(//c/Program Files/LibreOffice/program/**)",
+      "Bash(python -c \"import docx2pdf; print\\('docx2pdf ok'\\)\")",
+      "PowerShell(Out-Null *)",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft/Edge/Application/**)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Bash(node -e \"try{require.resolve\\('puppeteer'\\);console.log\\('puppeteer OK'\\)}catch\\(e\\){try{require.resolve\\('playwright'\\);console.log\\('playwright OK'\\)}catch\\(e2\\){console.log\\('none-local'\\)}}\")",
+      "Bash(npx --version)",
+      "Bash(python -)",
+      "Bash(python assets/cv/build_cv.py)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }

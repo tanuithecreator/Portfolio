@@ -3875,6 +3875,9 @@ img.u-pull-left {
     overflow-y       : auto;
     position         : relative;
     max-height       : 90vh;
+    border-radius    : 12px;
+    border-top       : 3px solid var(--color-1);
+    box-shadow       : 0 18px 50px rgba(0, 0, 0, 0.32);
 }
 
 
@@ -3946,7 +3949,7 @@ img.u-pull-left {
     font-size        : var(--text-sm);
     font-weight      : 500;
     text-decoration  : none;
-    border-radius    : 4px;
+    border-radius    : 6px;
     transition       : all 0.3s ease;
     color            : white;
     background-color : rgba(0, 0, 0, 0.7);
