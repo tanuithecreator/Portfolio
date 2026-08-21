@@ -110,10 +110,10 @@ def build():
         "(Second Class Honours, Upper Division) from Strathmore University, "
         "currently building production software for the climate technology sector "
         "at Verst Carbon. My work spans full-stack web applications, AI agent "
-        "systems, and data pipelines, from a financial risk engine for carbon-credit "
-        "portfolios to a real-time meeting intelligence platform and a deepfake "
+        "systems, and data pipelines, from geospatial decision-support dashboards "
+        "to a real-time meeting intelligence platform and a deepfake "
         "detection system. Recognized for academic excellence through the Dean's "
-        "List and experienced in international innovation challenges, I focus on "
+        "List, I focus on "
         "turning complex problems into reliable, well-crafted products.",
         align=WD_ALIGN_PARAGRAPH.JUSTIFY,
     )
@@ -203,20 +203,6 @@ def build():
     ]:
         add_bullet(doc, [(b, {})])
 
-    # Hackathons
-    add_section_heading(doc, "HACKATHONS & INNOVATION CHALLENGES")
-    add_bullet(doc, [
-        ("International Energy & Sustainability Hackathon (2026)", {"bold": True}),
-        (": Completed the 2026 cohort, developing sustainable energy solutions.", {}),
-    ])
-    add_bullet(doc, [
-        ("Inflection AI Hackathon (Climate Change)", {"bold": True}),
-        (": Developed 'EcoCoin,' a fintech solution for trading carbon credits for real currency to incentivize climate action.", {}),
-    ])
-    add_bullet(doc, [
-        ("Oracle Hackathon (Climate Change)", {"bold": True}),
-        (": Built 'Smart IoT Farm,' an integrated system using sensors and AI to monitor soil health and automate irrigation.", {}),
-    ])
 
     # Selected Engineering Projects
     add_section_heading(doc, "SELECTED ENGINEERING PROJECTS")
@@ -231,23 +217,28 @@ def build():
         (": An explainable deep-learning system for detecting deepfake images and video, trained on a large public dataset with strong accuracy. Provides visual explanations of its predictions, video analysis, and admin reporting. Built with a ResNet50 model, React/TypeScript, and Flask.", {}),
     ])
     add_bullet(doc, [
-        ("Project Rainmaker (AI Sales Agent)", {"bold": True}),
-        (": An AI sales agent (LangGraph) that researches businesses online, evaluates their websites for marketing gaps, scores leads, and generates outreach reports. Developed for Okara AI's automated marketing platform.", {}),
-    ])
-    add_bullet(doc, [
         ("Gaming RAG Assistant (AI)", {"bold": True}),
         (": A question-answering assistant over game documentation that combines semantic and keyword search for accurate, character-styled responses. Built with HuggingFace models and deployed on Streamlit Cloud.", {}),
     ])
 
-    add_body(doc, "Climate & Fintech", bold=True, space_after=Pt(2))
+    add_body(doc, "Data & Platforms", bold=True, space_after=Pt(2))
     add_bullet(doc, [
-        ("OfftakeOS (Fintech + AI Automation)", {"bold": True}),
-        (": An automated financial risk engine for carbon-credit portfolios that ingests forward contracts, monitors real-world environmental and market data, and scores delivery risk on interactive dashboards. Built with Next.js, Flask, and PostgreSQL, backed by a comprehensive automated test suite.", {}),
+        ("Corridor Intelligence Platform (Verst Carbon)", {"bold": True}),
+        (": A decision-support platform for the Abidjan-Lagos Corridor, a 1,028 km highway corridor linking five West African nations. Consolidates infrastructure, economic, policy and stakeholder data into one dashboard, with an interactive map and a chat-driven agent that answers questions and drives contextual map overlays. Built with Next.js, React and TypeScript for the EU-Africa Business Forum.", {}),
     ])
     add_bullet(doc, [
-        ("CarbonVerify (Fullstack + DevOps)", {"bold": True}),
-        (": A carbon-credit auditing dashboard with project mapping, sensor-data verification, and a certificate-issuing workflow. Built with React, a Node.js/Express API, PostgreSQL, and a full CI/CD pipeline.", {}),
+        ("cleancookIQ (Fullstack, co-built with Ignis Innovation)", {"bold": True}),
+        (": A platform coordinating Kenya's institutional shift away from polluting cooking fuels, giving institutions, suppliers, funders and researchers each their own workspace. Covers carbon project registration, credit verification and digital monitoring records alongside a supplier marketplace and financing tools. Built with React, TypeScript and Supabase.", {}),
     ])
+    add_bullet(doc, [
+        ("Soil Health Dashboard (Geospatial Data)", {"bold": True}),
+        (": An analytical dashboard unifying authoritative soil datasets into one workspace. Queries live soil properties for any coordinate, compares sources against each other, and scores land degradation risk across a point or a drawn polygon, carrying uncertainty ranges through to the interface. Built with Next.js, TypeScript and MapLibre GL.", {}),
+    ])
+    add_bullet(doc, [
+        ("Smart Farming Assistant (IoT + AI)", {"bold": True}),
+        (": A farm management dashboard combining live sensor readings for soil moisture and environmental conditions with weather forecasting and an AI assistant that answers agronomic questions. Built with React, TypeScript and FastAPI.", {}),
+    ])
+
 
     add_body(doc, "Mobile & Web", bold=True, space_after=Pt(2))
     add_bullet(doc, [
@@ -257,6 +248,10 @@ def build():
     add_bullet(doc, [
         ("CommunityPlus (Web)", {"bold": True}),
         (": Web-based donation platform bridging donors and receivers to facilitate community support.", {}),
+    ])
+    add_bullet(doc, [
+        ("Client Portfolio Websites (Freelance)", {"bold": True}),
+        (": Designed and delivered personal portfolio sites for three professional clients, covering responsive layout, content structure and deployment.", {}),
     ])
 
     # Achievements & Certifications
