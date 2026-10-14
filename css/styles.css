@@ -2853,6 +2853,22 @@ img.u-pull-left {
     min-height      : 100%;
     overflow        : hidden;
     position        : relative;
+    isolation       : isolate;
+}
+
+/* --------------------------------------------------------------------
+ * ## background glow
+ * fixed gold glow that follows the cursor (js: ssBgGlow)
+ * -------------------------------------------------------------------- */
+.bg-glow {
+    position       : fixed;
+    inset          : 0;
+    z-index        : -1;
+    pointer-events : none;
+    background     : radial-gradient(42rem circle at var(--glow-x, 70%) var(--glow-y, 30%),
+                     hsla(36, 72%, 70%, 0.13),
+                     hsla(168, 62%, 36%, 0.05) 45%,
+                     transparent 70%);
 }
 
 /* --------------------------------------------------------------------

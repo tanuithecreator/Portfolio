@@ -402,6 +402,26 @@
     }; // end ssCvDownload
 
 
+   /* Background glow follows the cursor
+    * ------------------------------------------------------ */
+    const ssBgGlow = function() {
+
+        const glow = document.querySelector('.bg-glow');
+        if (!glow || !matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) return;
+
+        let frame = 0;
+        window.addEventListener('pointermove', function(e) {
+            if (frame) return;
+            frame = requestAnimationFrame(function() {
+                glow.style.setProperty('--glow-x', e.clientX + 'px');
+                glow.style.setProperty('--glow-y', e.clientY + 'px');
+                frame = 0;
+            });
+        }, { passive: true });
+
+    }; // end ssBgGlow
+
+
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
@@ -416,6 +436,7 @@
         ssAlertBoxes();
         ssMoveTo();
         ssCvDownload();
+        ssBgGlow();
 
     })();
 
